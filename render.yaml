@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: digiman-backend
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python digimanai.py
+    envVars:
+      - key: PORT
+        value: 5001
